@@ -6,6 +6,7 @@ import Homepage from "./components/Homepage/Homepage";
 import Navbar from "./components/Navbar/Navbar";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
+import Mediums from "./components/Mediums/Mediums";
 import { LOGOUT } from "./actions/types";
 
 // Redux
@@ -36,6 +37,7 @@ const App = () => {
               <Route exact path="/" component={Homepage} />
               <Route exact path="/register" component={Signup} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/mediums" component={Mediums} />
             </Switch>
           </Router>
         </Provider>

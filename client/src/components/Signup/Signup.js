@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { register } from "../../actions/auth";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./Signup.scss";
 
@@ -124,6 +124,12 @@ const Signup = ({ register, isAuthenticated }) => {
           >
             Register
           </button>
+          <h6>
+            Aleady have an account?{" "}
+            <Link className="account-login" to="/login">
+              Login
+            </Link>
+          </h6>
         </form>
       </div>
     </div>

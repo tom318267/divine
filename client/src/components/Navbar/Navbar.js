@@ -20,7 +20,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li>
-        <Link className="link hvr-rectangle-out" href="collapsible.html">
+        <Link to="/mediums" className="link hvr-rectangle-out">
           MEDIUMS
         </Link>
       </li>
@@ -45,7 +45,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li>
-        <Link className="link hvr-rectangle-out" href="collapsible.html">
+        <Link to="/mediums" className="link hvr-rectangle-out">
           MEDIUMS
         </Link>
       </li>
@@ -77,7 +77,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <ul className="sidenav" id="mobile-demo">
         <div className="mobile-overlay">
           <li>
-            <Link className="hvr-underline-from-center" href="sass.html">
+            <Link to="/" className="hvr-underline-from-center">
               HOME
             </Link>
           </li>
@@ -87,7 +87,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             </Link>
           </li>
           <li>
-            <Link className="hvr-underline-from-center" href="collapsible.html">
+            <Link to="/mediums" className="hvr-underline-from-center">
               MEDIUMS
             </Link>
           </li>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { login } from "../../actions/auth";
+import "./Login.scss";
 import Swal from "sweetalert2";
 
 const Login = ({ isAuthenticated, login }) => {
@@ -47,7 +48,7 @@ const Login = ({ isAuthenticated, login }) => {
   }
 
   return (
-    <div className="Signup">
+    <div className="Login">
       <div className="row">
         <form onSubmit={onSubmit} className="col s12">
           <h4>Login</h4>
@@ -87,6 +88,12 @@ const Login = ({ isAuthenticated, login }) => {
           >
             Login
           </button>
+          <h6>
+            Don't have an account?{" "}
+            <Link className="account-register" to="/register">
+              Register
+            </Link>
+          </h6>
         </form>
       </div>
     </div>
