@@ -12,6 +12,7 @@ body {
   overflow: scroll;
   .overlay {
     position: absolute;
+    overflow-x: hidden;
     top: 0;
     left: 0;
     width: 100%;

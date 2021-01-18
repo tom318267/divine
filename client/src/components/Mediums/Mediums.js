@@ -25,6 +25,7 @@ const Mediums = () => {
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={avatar} alt="medium-img" />
+          <h5>Lisa</h5>
           <img className="stars" src={stars} alt="stars-img" />
         </div>
         <div className="info-price-container">
@@ -44,6 +45,7 @@ const Mediums = () => {
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={avatar2} alt="medium-img" />
+          <h5>Frank</h5>
           <img className="stars" src={stars} alt="stars-img" />
         </div>
         <div className="info-price-container">
@@ -63,6 +65,7 @@ const Mediums = () => {
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={avatar3} alt="medium-img" />
+          <h5>Kelly</h5>
           <img className="stars" src={stars} alt="stars-img" />
         </div>
         <div className="info-price-container">
@@ -81,6 +84,7 @@ const Mediums = () => {
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={avatar4} alt="medium-img" />
+          <h5>Stacy</h5>
           <img className="stars" src={stars3} alt="stars-img" />
         </div>
         <div className="info-price-container">
@@ -99,6 +103,7 @@ const Mediums = () => {
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={avatar5} alt="medium-img" />
+          <h5>Stephanie</h5>
           <img className="stars" src={stars3} alt="stars-img" />
         </div>
         <div className="info-price-container">
