@@ -5,3 +5,7 @@ export const AUTH_ERROR = "AUTH_ERROR";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT = "LOGOUT";
+export const GET_REVIEWS = "GET_REVIEWS";
+export const REVIEW_ERROR = "REVIEW_ERROR";
+export const ADD_REVIEW = "ADD_REVIEW";
+export const GET_REVIEW = "GET_REVIEW";

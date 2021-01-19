@@ -10,13 +10,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul className="right hide-on-med-and-down">
       <li>
-        <Link className="link hvr-rectangle-out" to="/">
+        <Link to="/" className="link hvr-rectangle-out">
           HOME
         </Link>
       </li>
       <li>
-        <Link className="link hvr-rectangle-out" href="badges.html">
-          FREE READING
+        <Link to="/reviews" className="link hvr-rectangle-out">
+          REVIEWS
         </Link>
       </li>
       <li>
@@ -25,9 +25,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li onClick={logout}>
-        <Link className="link hvr-rectangle-out" href="mobile.html">
-          LOGOUT
-        </Link>
+        <Link className="link hvr-rectangle-out">LOGOUT</Link>
       </li>
     </ul>
   );
@@ -35,13 +33,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul className="right hide-on-med-and-down">
       <li>
-        <Link className="link hvr-rectangle-out" to="/">
+        <Link to="/" className="link hvr-rectangle-out">
           HOME
         </Link>
       </li>
       <li>
-        <Link className="link hvr-rectangle-out" href="badges.html">
-          FREE READING
+        <Link to="/reviews" className="link hvr-rectangle-out">
+          REVIEWS
         </Link>
       </li>
       <li>
@@ -50,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li>
-        <Link to="/login" className="link hvr-rectangle-out" href="mobile.html">
+        <Link to="/login" className="link hvr-rectangle-out">
           LOGIN
         </Link>
       </li>
@@ -82,8 +80,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             </Link>
           </li>
           <li>
-            <Link className="hvr-underline-from-center" href="badges.html">
-              FREE READING
+            <Link to="/reviews" className="hvr-underline-from-center">
+              REVIEWS
             </Link>
           </li>
           <li>

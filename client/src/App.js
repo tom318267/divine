@@ -6,7 +6,10 @@ import Homepage from "./components/Homepage/Homepage";
 import Navbar from "./components/Navbar/Navbar";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
-import Mediums from "./components/Mediums/Mediums";
+import MediumsList from "./components/MediumsList/MediumsList";
+import PostReview from "./components/PostReview/PostReview";
+import PrivateRoute from "./routing/PrivateRoute";
+import Reviews from "./components/Reviews/Reviews";
 import { LOGOUT } from "./actions/types";
 
 // Redux
@@ -37,7 +40,13 @@ const App = () => {
               <Route exact path="/" component={Homepage} />
               <Route exact path="/register" component={Signup} />
               <Route exact path="/login" component={Login} />
-              <Route exact path="/mediums" component={Mediums} />
+              <Route exact path="/mediums" component={MediumsList} />
+              <Route exact path="/reviews" component={Reviews} />
+              <PrivateRoute
+                exact
+                path="/add-review/:id"
+                component={PostReview}
+              />
             </Switch>
           </Router>
         </Provider>

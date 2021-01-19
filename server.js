@@ -13,6 +13,7 @@ app.use(cors());
 
 app.use("/auth", require("./routes/auth"));
 app.use("/users", require("./routes/users"));
+app.use("/reviews", require("./routes/reviews"));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {

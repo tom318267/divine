@@ -5,6 +5,9 @@ const ReviewSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
+  name: {
+    type: String,
+  },
   title: {
     type: String,
     required: true,
@@ -17,6 +20,10 @@ const ReviewSchema = new mongoose.Schema({
   rating: {
     type: Number,
     required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
   },
 });
 
