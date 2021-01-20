@@ -12,7 +12,7 @@ const Reviews = ({ reviews: { reviews }, getReviews }) => {
     <div className="Reviews">
       <div className="flex-container">
         <h3>
-          <i class="far fa-thumbs-up"></i> Customer Reviews
+          <i className="far fa-thumbs-up"></i> Customer Reviews
         </h3>
         <div className="reviews-container">
           {reviews.map((review) => (

@@ -118,7 +118,7 @@ const Signup = ({ register, isAuthenticated }) => {
             </div>
           </div>
           <button
-            class="waves-effect waves-light btn-large"
+            className="waves-effect waves-light btn-large"
             type="submit"
             name="action"
           >

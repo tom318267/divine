@@ -16,7 +16,7 @@ const MediumsList = ({ mediums: { mediums } }) => {
         </h3>
       </div>
       {mediums.map((medium) => (
-        <MediumsContainer medium={medium} />
+        <MediumsContainer key={medium.id} medium={medium} />
       ))}
     </div>
   );

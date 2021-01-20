@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MediumsContainer.scss";
 
-const Medium = ({ medium }) => {
+const MediumsContainer = ({ medium }) => {
   return (
-    <div>
+    <div className="MediumsContainer">
       <div className="medium-container">
         <div className="img-star-container">
           <img className="medium-img" src={medium.image} alt="medium-img" />
@@ -19,16 +20,10 @@ const Medium = ({ medium }) => {
           <div className="session-book-div">
             <li>$100 per session</li>
             <div className="select-review-div">
+              <Link className="waves-effect waves-light btn">Select</Link>
               <Link
-                style={{ marginRight: "10px" }}
-                class="waves-effect waves-light btn"
-              >
-                Select
-              </Link>
-              <Link
-                style={{ marginRight: "10px" }}
                 to={`/add-review/${medium.id}`}
-                class="waves-effect waves-light btn"
+                className="waves-effect waves-light btn"
               >
                 Post Review
               </Link>
@@ -40,4 +35,4 @@ const Medium = ({ medium }) => {
   );
 };
 
-export default Medium;
+export default MediumsContainer;
