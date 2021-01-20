@@ -18,7 +18,7 @@ const Homepage = () => {
         >
           Get Started
         </Link>
-        <Link className="waves-effect waves-light btn-large learn">
+        <Link to="/about" className="waves-effect waves-light btn-large learn">
           Learn More
         </Link>
       </div>

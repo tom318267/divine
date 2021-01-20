@@ -10,6 +10,7 @@ import MediumsList from "./components/MediumsList/MediumsList";
 import PostReview from "./components/PostReview/PostReview";
 import PrivateRoute from "./routing/PrivateRoute";
 import Reviews from "./components/Reviews/Reviews";
+import About from "./components/About/About";
 import { LOGOUT } from "./actions/types";
 
 // Redux
@@ -42,6 +43,7 @@ const App = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/mediums" component={MediumsList} />
               <Route exact path="/reviews" component={Reviews} />
+              <Route exact path="/about" component={About} />
               <PrivateRoute
                 exact
                 path="/add-review/:id"

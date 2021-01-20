@@ -19,22 +19,10 @@ const PostReview = ({ addReview, history, match }) => {
     });
   };
 
-  // const Toast = Swal.mixin({
-  //   toast: true,
-  //   position: "top-end",
-  //   showConfirmButton: false,
-  //   timer: 3000,
-  //   timerProgressBar: true,
-  //   didOpen: (toast) => {
-  //     toast.addEventListener("mouseenter", Swal.stopTimer);
-  //     toast.addEventListener("mouseleave", Swal.resumeTimer);
-  //   },
-  // });
-
   const onSubmit = async (e) => {
     e.preventDefault();
     addReview(form, match.params.id);
-    history.push("/");
+    history.push("/reviews");
   };
 
   return (
