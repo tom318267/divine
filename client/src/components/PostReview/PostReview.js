@@ -31,7 +31,7 @@ const PostReview = ({ addReview, history, match }) => {
         <form onSubmit={onSubmit} className="col s12">
           <h4>Post Review</h4>
           <div className="row">
-            <div className="input-field col s4">
+            <div className="input-field col s12">
               <input
                 onChange={onChange}
                 id="title"
@@ -45,7 +45,7 @@ const PostReview = ({ addReview, history, match }) => {
             </div>
           </div>
           <div className="row">
-            <div className="input-field col s4">
+            <div className="input-field col s12">
               <input
                 onChange={onChange}
                 id="rating"

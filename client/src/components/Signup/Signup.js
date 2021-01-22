@@ -62,7 +62,7 @@ const Signup = ({ register, isAuthenticated }) => {
         <form onSubmit={onSubmit} className="col s12">
           <h4>Sign Up</h4>
           <div className="row">
-            <div className="input-field col s6">
+            <div className="input-field col s12">
               <input
                 onChange={onChange}
                 id="name"
