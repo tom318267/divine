@@ -55,7 +55,7 @@ const PostReview = ({ addReview, history, match }) => {
                 value={rating}
                 required
               />
-              <label htmlFor="rating">Rating</label>
+              <label htmlFor="rating">Rating(1-5)</label>
             </div>
           </div>
           <div className="row">
